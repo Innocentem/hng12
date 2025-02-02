@@ -9,7 +9,7 @@ CORS(app)  # Enable CORS
 def get_info():
     response = {
         "email": "mwbzinno@gmail.com",
-        "datetime.utcnow().isoformat(timespec='seconds') + "Z",
+        "current_datetime": datetime.utcnow().isoformat(timespec='seconds') + "Z",  # Corrected
         "github_url": "https://github.com/Innocentem/hng12.git"
     }
     return jsonify(response), 200
